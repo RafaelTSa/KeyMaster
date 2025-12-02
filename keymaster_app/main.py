@@ -12,3 +12,6 @@ def obter_opcao_sim_nao(pergunta): #Função auxiliar para garantir que o usuár
         if resposta in ['s', 'n']:
             #retorna True se a resposta é valida
             return resposta == 's'
+        # Se for inválido, exibe a mensagem e o loop repete
+        print("Resposta inválida. Por favor, digite 's para sim ou 'n para não.")
+        
