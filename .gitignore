@@ -1,0 +1,10 @@
+# Logs
+logs/
+
+# Arquivos temporários do Python
+__pycache__/
+*.pyc
+
+# Ambiente virtual (caso crie depois)
+venv/
+.venv/
