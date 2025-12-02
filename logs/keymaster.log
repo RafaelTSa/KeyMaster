@@ -1,0 +1,4 @@
+2025-12-02 07:57:35,201 - INFO - Senha gerada | comprimento=8 | maiusculas=True | numeros=True | simbolos=False
+2025-12-02 08:01:49,774 - INFO - Senha gerada | comprimento=8 | maiusculas=True | numeros=True | simbolos=True
+2025-12-02 08:09:24,179 - INFO - Senha gerada | comprimento=8 | maiusculas=True | numeros=True | simbolos=False
+2025-12-02 08:11:40,746 - INFO - Senha gerada | comprimento=8 | maiusculas=True | numeros=False | simbolos=True
