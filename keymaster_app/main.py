@@ -59,3 +59,29 @@ def gerar_senha(tamanho, usar_maiusculas, usar_numeros, usar_simbolos): #Gera a 
 
     return "".join(senha)
 
+# 3. Função de execução (MAIN)
+
+def main(): #função principal que será executada
+    print("\n" + "="*40)
+    print("        KeyMaster - Gerador de Senhas")
+    print("="*40)
+
+    tamanho = obter_tamanho_senha() # Coleta do usuário o parâmetro
+
+    print("\n--- Opções de Caracteres ---")
+    usar_maiusculas = obter_opcao_sim_nao("Usar Letras Maiúsculas")
+    usar_numeros = obter_opcao_sim_nao("Usar Números")
+    usar_simbolos = obter_opcao_sim_nao("Usar Símbolos (ex: !@#$%^)")
+    
+    if not (usar_maiusculas or usar_numeros or usar_simbolos): # Verificação de segurança pelo menos uma opção deve ser True.
+        print("\n[ERRO] É necessário selecionar pelo menos um tipo de caractere opcional para maior segurança.")
+        sys. exit(1)
+
+    senha_gerada = gerar_senha(tamanho, usar_maiusculas, usar_numeros, usar_simbolos) #Geração da senha
+
+    print("\n"+"="*40)
+    print(f"Senha Gerada: {senha_gerada}")
+    print("="*40)
+
+if __name__ == "__main__":
+    main()
