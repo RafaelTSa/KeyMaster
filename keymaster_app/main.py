@@ -17,5 +17,8 @@ def obter_opcao_sim_nao(pergunta): #Função auxiliar para garantir que o usuár
 
 def obter_tamanho_senha(): # Função para obter o tamanho desejado da senha, garantindo que seja um número válido (mínimo 8).
     while True:
-        try:
+        try: # tenta converter a entrada do usuário para um número inteiro
             tamanho = int(input("Qual o comprimento da senha desejada (mínimo 8)? "))
+            if tamanho >=8: #verifica se o tamanho mínimo é 8
+                return tamanho # Retorna o valor se for válido
+            print(" O comprimento mínimo recomendado para uma senha segura é 8. Tente novamente.")
