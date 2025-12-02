@@ -14,4 +14,8 @@ def obter_opcao_sim_nao(pergunta): #Função auxiliar para garantir que o usuár
             return resposta == 's'
         # Se for inválido, exibe a mensagem e o loop repete
         print("Resposta inválida. Por favor, digite 's para sim ou 'n para não.")
-        
+
+def obter_tamanho_senha(): # Função para obter o tamanho desejado da senha, garantindo que seja um número válido (mínimo 8).
+    while True:
+        try:
+            tamanho = int(input("Qual o comprimento da senha desejada (mínimo 8)? "))
