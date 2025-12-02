@@ -5,6 +5,8 @@ import random  # Gerador de números aleatórios.
 import secrets  # Gerador de números aleatórios seguros.
 import sys # Usado para fechar o programa de forma controlada se o usuário cometer um erro grave.
 
+# 1. FUNÇÕES DE VALIDAÇÃO DE INPUT:
+
 def obter_opcao_sim_nao(pergunta): #Função auxiliar para garantir que o usuário responda com 's' (sim) ou 'n' (não).
     while True:
         # Pede a entrada, converte para minúsculas e remove espaços em branco (strip)
@@ -25,4 +27,4 @@ def obter_tamanho_senha(): # Função para obter o tamanho desejado da senha, ga
 
         except ValueError: # verifica se o usuário digitar algo que não é um número
             print("Entrada inválida. Por favor, digite um número inteiro válido.")
-            
+
