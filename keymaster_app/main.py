@@ -6,7 +6,6 @@ import random  # Gerador de números aleatórios.
 import secrets  # Gerador de números aleatórios seguros.
 import sys # Usado para fechar o programa de forma controlada se o usuário cometer um erro grave.
 import logging
-from datetime import datetime
 
 # Configuração do log
 LOG_DIR = "logs"
@@ -140,6 +139,12 @@ def main(): #função principal que será executada
             info("Dica: instale 'pyperclip' para copiar automaticamente para o clipboard (opcional).")
             info("No windows: faça 'pip install pyperclip' no terminal")
 
+
+# Executa programa
+
+if __name__ == "__main__":
+    try:
+        main()
     except KeyboardInterrupt:
         warning("\nExecução interrompida pelo usuário. Saindo...")
         logging.info("Execução interrompida pelo usuário (KeyboardInterrupt).")
@@ -148,8 +153,3 @@ def main(): #função principal que será executada
         error("\nOcorreu um erro inesperado. Veja o log para detalhes.")
         logging.exception("Erro inesperado no main()")
         sys.exit(1)
-
-# Executa programa
-
-if __name__ == "__main__":
-    main()
