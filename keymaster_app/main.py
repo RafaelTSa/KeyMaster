@@ -22,3 +22,7 @@ def obter_tamanho_senha(): # Função para obter o tamanho desejado da senha, ga
             if tamanho >=8: #verifica se o tamanho mínimo é 8
                 return tamanho # Retorna o valor se for válido
             print(" O comprimento mínimo recomendado para uma senha segura é 8. Tente novamente.")
+
+        except ValueError: # verifica se o usuário digitar algo que não é um número
+            print("Entrada inválida. Por favor, digite um número inteiro válido.")
+            
