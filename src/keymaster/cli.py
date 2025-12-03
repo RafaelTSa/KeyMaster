@@ -1,7 +1,7 @@
 import os
 import sys
 import logging
-from generator import gerar_senha
+from keymaster.generator import gerar_senha
 
 
 # =============================
