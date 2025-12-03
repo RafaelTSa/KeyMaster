@@ -6,45 +6,109 @@
 
 ## 📌 Sobre o Projeto
 
-O **KeyMaster** é um gerador de senhas seguras em Python, focado em boas práticas de segurança,
-organização de código e usabilidade em terminal.
+O **KeyMaster** é um gerador de senhas seguras desenvolvido em **Python**, com foco em:
 
-O projeto está sendo desenvolvido de forma incremental, com melhorias adicionadas a cada dia do desafio.
+- Boas práticas de segurança
+- Organização e escalabilidade do código
+- Usabilidade tanto em **linha de comando (CLI)** quanto em **interface gráfica (GUI)**
+
+O projeto foi construído de forma **incremental**, evoluindo a cada dia do desafio, saindo de um script simples até uma aplicação desktop funcional.
 
 ---
 
-## ⚙️ Funcionalidades Atuais
+## ⚙️ Funcionalidades
 
 ✅ Geração de senhas criptograficamente seguras com `secrets`  
-✅ Definição do comprimento da senha (mínimo recomendado)  
-✅ Escolha de tipos de caracteres:
-- Letras minúsculas
-- Letras maiúsculas
-- Números
+✅ Definição do comprimento da senha (mínimo recomendado de 8 caracteres)  
+✅ Escolha dos tipos de caracteres:
+- Letras minúsculas  
+- Letras maiúsculas  
+- Números  
 - Símbolos  
+
 ✅ Validação de entradas do usuário  
-✅ Mensagens coloridas no terminal (info, aviso, erro e sucesso)  
+✅ Mensagens de erro amigáveis  
 ✅ Registro de eventos em arquivo de log  
-✅ Opção de copiar a senha para a área de transferência (opcional)
+✅ Opção de copiar a senha automaticamente para a área de transferência  
+✅ Separação clara entre lógica, interface e execução  
 
 ---
 
-## 🖥️ Interface
+## 🖥️ Interfaces Disponíveis
 
-O projeto funciona atualmente via **linha de comando (CLI)**, com foco em clareza e usabilidade.
+### 🔹 CLI — Linha de Comando
 
----
-
-## 🛠️ Tecnologias Utilizadas
-
-- Python  
-- Biblioteca `secrets`  
-- Biblioteca `logging`  
-- Git e GitHub  
-
----
-
-## ▶️ Como Executar
+Permite gerar senhas diretamente pelo terminal, com perguntas interativas.
 
 ```bash
-python src/keymaster/main.py
+python -m keymaster.cli
+
+
+
+🔹 GUI — Interface Gráfica (Tkinter)
+
+Aplicação desktop simples e funcional com:
+
+Campo para tamanho da senha
+
+Checkboxes para seleção de caracteres
+
+Botão para gerar senha
+
+Exibição visual do resultado
+
+python -m keymaster.gui
+
+
+
+
+🛠️ Tecnologias Utilizadas
+
+Python 3
+
+Tkinter (interface gráfica)
+
+secrets (geração segura de senhas)
+
+logging (registro de eventos)
+
+Git & GitHub (versionamento)
+
+
+📂 Estrutura do Projeto
+KeyMaster/
+│
+├── src/
+│   └── keymaster/
+│       ├── __init__.py
+│       ├── cli.py        # Interface de linha de comando
+│       ├── gui.py        # Interface gráfica (Tkinter)
+│       └── generator.py # Lógica de geração de senhas
+│
+├── logs/
+│   └── keymaster.log
+│
+├── .gitignore
+└── README.md
+
+
+
+🎯 Objetivo Educacional
+
+Este projeto tem como objetivo praticar e consolidar:
+Lógica de programação em Python
+Boas práticas de organização de código
+Separação de responsabilidades (CLI, GUI e lógica)
+Uso de bibliotecas padrão do Python
+Versionamento de código com Git
+
+🚀 Próximas Melhorias (Ideias)
+🔐 Indicador de força da senha
+📦 Geração de executável (.exe)
+🎨 Melhorias no layout da interface gráfica
+🌐 Publicação de releases no GitHub
+
+
+👨‍💻 Autor
+Desenvolvido por Rafael Teixeira
+📅 Desafio de 21 Dias — Comunidade Dev Completo
