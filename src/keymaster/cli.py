@@ -1,5 +1,3 @@
-# Módulo principal para o projeto KeyMaster.
-# Implementa geração de senhas com melhorias de usabilidade, logs e tratamento de erros.
 import os
 import string  # Traz o módulo que nos dá conjuntos prontos de caracteres (letras, números, símbolos comuns).
 import random  # Gerador de números aleatórios.
