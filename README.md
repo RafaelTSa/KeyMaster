@@ -92,6 +92,71 @@ KeyMaster/
 └── README.md
 
 
+▶️ Como Usar o KeyMaster
+
+O KeyMaster pode ser utilizado de duas formas: linha de comando (CLI) ou interface gráfica (GUI).
+
+🔧 Pré-requisitos
+
+Python 3.10 ou superior instalado
+
+Clonar o repositório:
+
+git clone https://github.com/seu-usuario/keymaster.git
+cd keymaster
+
+
+💡 Não é necessário instalar bibliotecas externas — o projeto utiliza apenas bibliotecas padrão do Python.
+
+
+
+🖥️ Opção 1 — Usando via Linha de Comando (CLI)
+
+Execute o comando abaixo no terminal:
+python -m keymaster.cli
+
+
+Programa irá:
+1. Solicitar o comprimento da senha
+2. Perguntar se deseja usar:
+    - Letras maiúsculas
+    - Números
+    - Símbolos
+3. Gerar a senha com base nas opções escolhidas
+4. Exibir a senha no terminal
+5. Copiar automaticamente a senha para a área de transferência (se habilitado)
+✅ Ideal para usuários que preferem rapidez no terminal.
+
+
+🖱️ Opção 2 — Usando a Interface Gráfica (GUI)
+Execute:
+python -m keymaster.gui
+
+
+Na interface gráfica, o usuário pode:
+1. Informar o tamanho da senha
+2. Marcar ou desmarcar os tipos de caracteres desejados
+3. Clicar em “Gerar Senha”
+4. Visualizar a senha gerada na tela
+5. Ter a senha copiada automaticamente para a área de transferência
+✅ Ideal para quem prefere uma experiência visual e simples.
+
+
+📋 Copiar Senha Automaticamente
+Após gerar uma senha:
+- Ela é exibida na tela ou terminal
+- E também copiada automaticamente para a área de transferência, facilitando o uso imediato
+
+
+⚠️ Recomendações de Segurança
+
+Utilize senhas com 8 ou mais caracteres
+Combine letras, números e símbolos
+Evite reutilizar senhas importantes
+
+
+
+
 
 🎯 Objetivo Educacional
 
