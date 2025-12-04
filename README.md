@@ -156,8 +156,8 @@ Evite reutilizar senhas importantes
 
 
 
-## 🖼️ Interface Gráfica
 
+## 🖼️ Interface Gráfica
 ![Interface gráfica do KeyMaster](https://raw.githubusercontent.com/RafaelTSa/KeyMaster/main/src/keymaster/assets/screenshots/gui-screenshot.png)
 
 
