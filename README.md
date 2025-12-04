@@ -158,7 +158,8 @@ Evite reutilizar senhas importantes
 
 
 ## 🖼️ Interface Gráfica
-<img src="https://raw.githubusercontent.com/RafaelTSa/KeyMaster/main/src/keymaster/assets/screenshots/gui-screenshot.png" alt="Interface gráfica do KeyMaster">
+
+![Interface gráfica do KeyMaster](src/keymaster/assets/screenshots/gui-screenshot.png)
 
 
 
