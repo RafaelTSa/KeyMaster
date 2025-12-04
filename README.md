@@ -156,15 +156,6 @@ Evite reutilizar senhas importantes
 
 
 
-
-## 🖼️ Interface Gráfica
-
-![Interface gráfica do KeyMaster](src/keymaster/assets/screenshots/gui-screenshot.png)
-
-
-
-
-
 🎯 Objetivo Educacional
 
 Este projeto tem como objetivo praticar e consolidar:
