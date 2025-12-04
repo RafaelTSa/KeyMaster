@@ -155,6 +155,12 @@ Combine letras, números e símbolos
 Evite reutilizar senhas importantes
 
 
+## 🖼️ Capturas de Tela
+
+### Interface Gráfica (GUI)
+![KeyMaster GUI](assets/screenshots/gui.png)
+
+
 
 
 
